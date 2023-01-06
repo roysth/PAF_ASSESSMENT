@@ -6,6 +6,7 @@ import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import jakarta.json.JsonObject;
@@ -13,7 +14,7 @@ import vttp2022.paf.assessment.eshop.models.LineItem;
 import vttp2022.paf.assessment.eshop.models.Order;
 
 import static vttp2022.paf.assessment.eshop.respositories.Queries.*;
-
+@Repository
 public class OrderRepository {
 
 	@Autowired
